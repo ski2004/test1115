@@ -5,7 +5,7 @@ import { SssComponent } from './sss/sss.component';
 
 const routes: Routes = [
   { path: '',  component: CccComponent },
-  { path: 'xxx',  component: SssComponent },
+  { path: 'sss',  component: SssComponent },
 ];
 
 @NgModule({
