@@ -8,7 +8,7 @@ const routes: Routes = [
   component: CccComponent,
    children: [
       {path: '', component: CccComponent},
-      {path: '', component: SssComponent}
+      {path: 'sss', component: SssComponent}
     ]
   }
 ];
