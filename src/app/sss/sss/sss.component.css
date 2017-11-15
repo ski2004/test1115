@@ -1,0 +1,16 @@
+.content {
+  position: relative;
+  padding: 10px;
+  background-color: blue;
+}
+
+.content:before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: right;
+  position: absolute;
+  content: 'SSS component';
+  color: white;
+}

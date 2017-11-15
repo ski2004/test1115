@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CccComponent } from './ccc/ccc.component';
 import { SssComponent } from './sss/sss.component';
+import { Page1Component } from './page1/page1.component';
 
 const routes: Routes = [
-  { path: '',
-  component: CccComponent,
-   children: [
-      {path: '', component: CccComponent},
-      {path: 'sss', component: SssComponent}
-    ]
+  {
+    path: 'sss',
+    component: SssComponent,
+    children: [{ path: 'page1', component: Page1Component }]
   }
 ];
 
@@ -17,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SssRoutingModule { }
+export class SssRoutingModule {}
