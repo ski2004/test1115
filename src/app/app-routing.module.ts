@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '',  component: AaaComponent },
-  { path: 'ssss',  loadChildren: './sss/sss.module#SssModule' },
+  { path: '',  loadChildren: './sss/sss.module#SssModule' },
 ];
 
 @NgModule({
