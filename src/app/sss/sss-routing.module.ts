@@ -4,12 +4,11 @@ import { CccComponent } from './ccc/ccc.component';
 import { SssComponent } from './sss/sss.component';
 
 const routes: Routes = [
-  { path: "", //設定根目錄為這一層
+  { path: '',
   component: CccComponent,
-  // Product 包含的小組件們
    children: [
-      {path: "", component: CccComponent},
-      {path: ":id", component: SssComponent}
+      {path: '', component: CccComponent},
+      {path: '', component: SssComponent}
     ]
   }
 ];
