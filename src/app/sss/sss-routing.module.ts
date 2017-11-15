@@ -4,8 +4,14 @@ import { CccComponent } from './ccc/ccc.component';
 import { SssComponent } from './sss/sss.component';
 
 const routes: Routes = [
-  { path: '',  component: CccComponent },
-  { path: 'sss',  component: SssComponent },
+  { path: "", //設定根目錄為這一層
+  component: CccComponent,
+  // Product 包含的小組件們
+   children: [
+      {path: "", component: CccComponent},
+      {path: ":id", component: SssComponent}
+    ]
+  }
 ];
 
 @NgModule({
